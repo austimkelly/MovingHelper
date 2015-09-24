@@ -26,13 +26,13 @@
 		9BA103BB1B2FB02800EA86C0 /* TaskUpdatedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA103BA1B2FB02800EA86C0 /* TaskUpdatedDelegate.swift */; };
 		9BA103BD1B2FB0FC00EA86C0 /* TaskSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA103BC1B2FB0FC00EA86C0 /* TaskSaver.swift */; };
 		9BA103BF1B2FB5DB00EA86C0 /* FileLoadingStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA103BE1B2FB5DB00EA86C0 /* FileLoadingStringExtension.swift */; };
+		9BB3DC091B4005E2009BB440 /* TaskCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3DC081B4005E2009BB440 /* TaskCellTests.swift */; };
 		9BBB3E461B361D8C002AF4EF /* UITableViewCellIdentifierExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB3E451B361D8C002AF4EF /* UITableViewCellIdentifierExtension.swift */; };
 		9BBB3E481B3620F7002AF4EF /* StartOfDayNSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB3E471B3620F7002AF4EF /* StartOfDayNSDateExtension.swift */; };
 		9BBB3E4A1B36231C002AF4EF /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB3E491B36231C002AF4EF /* ExtensionTests.swift */; };
 		9BBB3E4C1B36278C002AF4EF /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB3E4B1B36278C002AF4EF /* TaskTests.swift */; };
 		9BDC44B11B2545AE00D9328F /* TaskLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC44B01B2545AE00D9328F /* TaskLoader.swift */; };
 		9BDC44B51B25486100D9328F /* MovingDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC44B41B25486100D9328F /* MovingDateViewController.swift */; };
-		DBE987491BB44E590030CC19 /* TaskCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE987481BB44E590030CC19 /* TaskCellTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +69,13 @@
 		9BA103BA1B2FB02800EA86C0 /* TaskUpdatedDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskUpdatedDelegate.swift; sourceTree = "<group>"; };
 		9BA103BC1B2FB0FC00EA86C0 /* TaskSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSaver.swift; sourceTree = "<group>"; };
 		9BA103BE1B2FB5DB00EA86C0 /* FileLoadingStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoadingStringExtension.swift; sourceTree = "<group>"; };
+		9BB3DC081B4005E2009BB440 /* TaskCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCellTests.swift; sourceTree = "<group>"; };
 		9BBB3E451B361D8C002AF4EF /* UITableViewCellIdentifierExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellIdentifierExtension.swift; sourceTree = "<group>"; };
 		9BBB3E471B3620F7002AF4EF /* StartOfDayNSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartOfDayNSDateExtension.swift; sourceTree = "<group>"; };
 		9BBB3E491B36231C002AF4EF /* ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		9BBB3E4B1B36278C002AF4EF /* TaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
 		9BDC44B01B2545AE00D9328F /* TaskLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskLoader.swift; sourceTree = "<group>"; };
 		9BDC44B41B25486100D9328F /* MovingDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingDateViewController.swift; sourceTree = "<group>"; };
-		DBE987481BB44E590030CC19 /* TaskCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				9BBB3E491B36231C002AF4EF /* ExtensionTests.swift */,
-				DBE987481BB44E590030CC19 /* TaskCellTests.swift */,
+				9BB3DC081B4005E2009BB440 /* TaskCellTests.swift */,
 				9BBB3E4B1B36278C002AF4EF /* TaskTests.swift */,
 				9B923E191B25190E0095F507 /* Supporting Files */,
 			);
@@ -256,8 +256,7 @@
 		9B923DF61B25190E0095F507 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Razeware;
 				TargetAttributes = {
 					9B923DFD1B25190E0095F507 = {
@@ -340,9 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB3DC091B4005E2009BB440 /* TaskCellTests.swift in Sources */,
 				9BBB3E4A1B36231C002AF4EF /* ExtensionTests.swift in Sources */,
 				9BBB3E4C1B36278C002AF4EF /* TaskTests.swift in Sources */,
-				DBE987491BB44E590030CC19 /* TaskCellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +396,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -464,7 +462,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MovingHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -475,7 +472,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MovingHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -494,7 +490,6 @@
 				);
 				INFOPLIST_FILE = MovingHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovingHelper.app/MovingHelper";
 			};
@@ -510,7 +505,6 @@
 				);
 				INFOPLIST_FILE = MovingHelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.razeware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovingHelper.app/MovingHelper";
 			};

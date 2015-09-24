@@ -17,7 +17,7 @@ public func == (lhs: Task, rhs: Task) -> Bool {
 /**
 The main representation of a moving task.
 */
-public class Task: CustomStringConvertible, Equatable {
+public class Task: Printable, Equatable {
   
   //MARK: Constants
   

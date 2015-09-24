@@ -92,16 +92,16 @@ public enum TaskDueDate: String {
       components.month = 1
     }
     
-    return NSCalendar.currentCalendar().dateByAddingComponents(components, toDate: moveDate, options: [])!
+    return NSCalendar.currentCalendar().dateByAddingComponents(components, toDate: moveDate, options: .allZeros)!
   }
   
   public func daysFromDueDate(moveDate: NSDate) -> String {
     let taskDueDate = dueDateForMoveDate(moveDate)
     
-    let components = NSCalendar.currentCalendar().components(NSCalendarUnit.Day,
+    let components = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitDay,
       fromDate: NSDate.startOfToday(),
       toDate: taskDueDate,
-      options: [])
+      options: .allZeros)
     
     let daysLeft = components.day
     if daysLeft >= 0 {

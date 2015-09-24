@@ -18,13 +18,13 @@ public class TaskTableViewCell: UITableViewCell {
   public var delegate: TaskUpdatedDelegate?
   
   public override func prepareForReuse() {
-        super.prepareForReuse()
-        currentTask = nil
-        delegate = nil
+    super.prepareForReuse()
+    currentTask = nil
+    delegate = nil
   }
-    
+  
   public func configureForTask(task: Task) {
-    currentTask = task
+    currentTask = task;
     titleLabel.text = task.title
     notesLabel.text = task.notes
     configureForDoneState(task.done)
@@ -45,10 +45,10 @@ public class TaskTableViewCell: UITableViewCell {
   
   @IBAction func tappedCheckbox() {
     configureForDoneState(!checkbox.isChecked)
-    
+
     if let task = currentTask {
-        task.done = checkbox.isChecked
-        delegate?.taskUpdated(task)
+      task.done = checkbox.isChecked
+      delegate?.taskUpdated(task)
     }
   }
 }

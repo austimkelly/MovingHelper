@@ -19,11 +19,11 @@ extension String {
   :returns: The full path to the receiver in the NSDocumentDirectory
   */
   func pathInDocumentsDirectory() -> String {
-//    let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-//    if let last = urls.last as! NSURL,
-//      documentsDirectory = last.path {
-//        return documentsDirectory.stringByAppendingPathComponent(self)
-//    }
+    let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+    if let last = urls.last as? NSURL,
+      documentsDirectory = last.path {
+        return documentsDirectory.stringByAppendingPathComponent(self)
+    }
     
     //Fall-through
     return self
