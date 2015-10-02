@@ -19,5 +19,5 @@ script:
   - echo staring build and test...
   #  - open -a "simulator" --args -CurrentDeviceUDID $UDID
   #  - xctool -project ./MovingHelper/MovingHelper.xcodeproj -scheme MovingHelper -sdk iphonesimulator9.0 build test
-  - xcodebuild test -project ./MovingHelper/MovingHelper.xcodeproj -scheme MovingHelper -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,id=$UDID'
+  - xcodebuild test -project ./MovingHelper/MovingHelper.xcodeproj -scheme MovingHelper -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=$UDID"
   - osascript -e 'tell app "Simulator" to quit'
