@@ -1,10 +1,15 @@
-language: objective-c  #1
-osx_image: xcode7 #2
+language: objective-c
+osx_image: xcode7
 
 ### If you want to specify just the basic inputs to a single project to Travis, do so like this.
 #xcode_project: ./MovingHelper/MovingHelper.xcodeproj #3
 #xcode_scheme: MovingHelper #4
 #xcode_sdk: iphonesimulator9.0 #5
+
+## Create a build matrix to execute against multiple simulators/iOS versions
+env:
+  - UDID="FCBB11B4-D7C8-4085-9067-2CEDA2BFC895", IOS_DEVICE="iPhone 6 Plus (9.0)"
+  - UDID="3886CFCF-D163-4502-BDCD-82048729F3BE", IOS_DEVICE="iPhone 5s (8.1)"
 
 ### For running script, do this:
 script:
@@ -12,5 +17,7 @@ script:
   - xctool -v
   - xcrun instruments -s devices
   - echo staring build and test...
-  - xctool -project ./MovingHelper/MovingHelper.xcodeproj -scheme MovingHelper -sdk iphonesimulator9.0 build test
-
+#  - open -a "simulator" --args -CurrentDeviceUDID $UDID
+#  - xctool -project ./MovingHelper/MovingHelper.xcodeproj -scheme MovingHelper -sdk iphonesimulator9.0 build test
+   - xcodebuild test -workspace ./MovingHelper/MovingHelper.xcodeproj -scheme MovingHelper -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,id=$UDID'
+   - osascript -e 'tell app "Simulator" to quit'
